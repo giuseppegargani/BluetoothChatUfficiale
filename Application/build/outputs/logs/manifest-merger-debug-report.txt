@@ -44,15 +44,15 @@ INJECTED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Applic
 		INJECTED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:27:5-74
+ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:26:5-74
 	android:name
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:27:22-71
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:26:22-71
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:28:5-68
+ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:27:5-68
 	android:name
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:28:22-65
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:27:22-65
 application
-ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:30:5-53:19
+ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:29:5-53:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\giuse\.gradle\caches\transforms-2\files-2.1\476e418bae6a1646436b14a2350f3166\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\giuse\.gradle\caches\transforms-2\files-2.1\476e418bae6a1646436b14a2350f3166\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\giuse\.gradle\caches\transforms-2\files-2.1\c7739dfe0a1efd64a0dd260a875d3ca5\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -60,15 +60,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\gi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\giuse\.gradle\caches\transforms-2\files-2.1\476e418bae6a1646436b14a2350f3166\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:33:9-41
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:32:9-41
 	tools:ignore
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:35:9-48
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:34:9-48
 	android:icon
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:32:9-45
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:31:9-45
 	android:allowBackup
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:31:9-35
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:30:9-35
 	android:theme
-		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:34:9-40
+		ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:33:9-40
 activity#com.example.android.bluetoothchat.MainActivity
 ADDED from C:\Users\giuse\AndroidStudioProjects\BluetoothChatUfficiale\Application\src\main\AndroidManifest.xml:37:9-45:20
 	android:label
