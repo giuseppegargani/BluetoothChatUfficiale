@@ -13,6 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* Giuseppe INTRODUCTORY NOTES:
+How UUID work: https://stackoverflow.com/questions/13964342/android-how-do-bluetooth-uuids-work
+
+Searching BluetoothChat in StackOverflow returns a lot of interesting things:
+https://stackoverflow.com/search?q=BluetoothChat&s=eecaaf10-d5e0-4b69-ace5-b132dc48c1b9
+
+
+What is bluetooth connected thread close instantly closes socket after connection
+https://stackoverflow.com/questions/57338803/bluetooth-connected-thread-instantly-closes-socket-after-connection
+
+Questions [kotlin] bluetooth in stackoverflow
+https://stackoverflow.com/search?q=%5Bkotlin%5D+bluetooth
+*/
 
 package com.example.android.bluetoothchat;
 
@@ -38,6 +51,7 @@ import java.util.UUID;
  * incoming connections, a thread for connecting with a device, and a
  * thread for performing data transmissions when connected.
  */
+
 public class BluetoothChatService {
     // Debugging
     private static final String TAG = "BluetoothChatService";
@@ -47,12 +61,29 @@ public class BluetoothChatService {
     private static final String NAME_INSECURE = "BluetoothChatInsecure";
 
     // Unique UUID for this application
+    /* hardcoded UUID
+    The UUID is different between secure and insecure connection
+    https://stackoverflow.com/questions/34169251/why-is-a-hardcoded-uuid-used-in-the-android-sample-bluetoothchat-application
+     */
     private static final UUID MY_UUID_SECURE =
             UUID.fromString("fa87c0d0-afac-11de-8a39-0800200c9a66");
     private static final UUID MY_UUID_INSECURE =
             UUID.fromString("8ce255c0-200a-11e0-ac64-0800200c9a66");
 
     // Member fields
+    /* What to use now that Handler is deprecated?
+    https://stackoverflow.com/questions/61023968/what-do-i-use-now-that-handler-is-deprecated
+    Official documentation : https://developer.android.com/reference/android/os/Handler
+
+    Medium article: https://medium.com/@vijimscse/thread-looper-handler-thread-android-kotlin-c6edb9a8faec
+
+    interesting tutorial of Ray wenderlich:
+    https://www.raywenderlich.com/5466-threading-with-handlerthread-in-android
+
+    Official documentation about transfer bluetooth Data:
+    https://developer.android.com/guide/topics/connectivity/bluetooth/transfer-data?hl=de
+
+     */
     private final BluetoothAdapter mAdapter;
     private final Handler mHandler;
     private AcceptThread mSecureAcceptThread;

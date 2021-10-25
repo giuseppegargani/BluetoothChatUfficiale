@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/BluetoothChatUfficiale.iml" filepath="$PROJECT_DIR$/.idea/modules/BluetoothChatUfficiale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Application/BluetoothChatUfficiale.Application.iml" filepath="$PROJECT_DIR$/.idea/modules/Application/BluetoothChatUfficiale.Application.iml" />
     </modules>
   </component>
 </project>

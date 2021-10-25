@@ -13,6 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/*Introductory notes:
+    semicolons in Kotlin: Kotlin infers automatically semicolons, so there is no need to write them (just in two or three cases)
+    https://stackoverflow.com/questions/39318457/what-are-the-rules-of-semicolon-inference
+
+
+ */
 
 package com.example.android.bluetoothchat;
 
@@ -42,6 +48,7 @@ import java.util.Set;
  * by the user, the MAC address of the device is sent back to the parent
  * Activity in the result Intent.
  */
+
 public class DeviceListActivity extends Activity {
 
     /**
@@ -62,6 +69,12 @@ public class DeviceListActivity extends Activity {
     /**
      * Newly discovered devices
      */
+    /*ArrayAdapter provides views for an adapterView, returns a view for each object in a collection of data object
+    official documentation:
+    https://developer.android.com/reference/kotlin/android/widget/ArrayAdapter
+
+    example of ray wenderlich: https://www.raywenderlich.com/155-android-listview-tutorial-with-kotlin
+     */
     private ArrayAdapter<String> mNewDevicesArrayAdapter;
 
     @Override
@@ -69,10 +82,21 @@ public class DeviceListActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         // Setup the window
+        /*
+        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS) just show a round progress bar
+        NOW DEPRECATED https://stackoverflow.com/questions/14649745/android-what-does-requestwindowfeaturewindow-feature-indeterminate-progress/14649927
+        stackOverFlow: https://stackoverflow.com/questions/12680055/what-is-the-purpose-of-requestwindowfeature/12680269
+         */
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_device_list);
 
         // Set result CANCELED in case the user backs out
+        /*
+        official documentation :https://developer.android.com/reference/android/app/Activity#setResult(int,%20android.content.Intent)
+         for the need to explicity set setResult(activity.RESULT_CANCELED)
+         https://stackoverflow.com/questions/6564641/do-i-need-to-explicitly-setresult-to-result-canceled
+          When the user exits your app via "back" button - you receive RESULT_CANCELED as well.
+         */
         setResult(Activity.RESULT_CANCELED);
 
         // Initialize the button to perform device discovery
@@ -86,11 +110,16 @@ public class DeviceListActivity extends Activity {
 
         // Initialize array adapters. One for already paired devices and
         // one for newly discovered devices
-        ArrayAdapter<String> pairedDevicesArrayAdapter =
-                new ArrayAdapter<>(this, R.layout.device_name);
+        ArrayAdapter<String> pairedDevicesArrayAdapter = new ArrayAdapter<>(this, R.layout.device_name);
         mNewDevicesArrayAdapter = new ArrayAdapter<>(this, R.layout.device_name);
 
         // Find and set up the ListView for paired devices
+        /*setOnItemClickListener = to register a callback when an item in this adapterView has been clicked
+        official documentation:
+        https://developer.android.com/reference/android/widget/AdapterView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)
+        difference between setOnItemClickListener and onItemClickListener
+        https://stackoverflow.com/questions/40527971/what-is-the-difference-between-setonitemclicklistener-and-only-onitemclick
+         */
         ListView pairedListView = findViewById(R.id.paired_devices);
         pairedListView.setAdapter(pairedDevicesArrayAdapter);
         pairedListView.setOnItemClickListener(mDeviceClickListener);
